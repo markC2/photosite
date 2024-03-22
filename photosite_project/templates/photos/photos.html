@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+{% load static %}
+<html>
+    <head>
+
+        <style>
+            h1{
+                font-family: 'Courier New', Courier, monospace;
+                letter-spacing: .2rem;
+            }
+
+            .photos-container{
+                margin: auto;
+                width: 65%;
+                padding-left: 50px;
+
+            }
+
+            
+            
+
+
+
+        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "CSS/style.css" %}" />
+    </head>
+    <body>
+        <div class = "photos-container">
+        <h1>BYMARKCAREY</h1>
+        {% for img in images%}
+        
+        
+            
+            <img src="{% static img.image_url %}" class ="photos" />
+
+        
+
+        
+        {% endfor %}
+
+
+        </div>
+
+
+
+       
+
+
+    
+    </body>
+</html>
