@@ -1,0 +1,19 @@
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: .2rem;
+}
+
+.photos-container{
+  margin: auto;
+  width: 90%;
+  
+   
+}
+
+
+.photos{
+    width: 350px;
+    height: 250px;
+    
+}
+
